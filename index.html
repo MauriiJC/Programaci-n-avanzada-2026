@@ -1,24 +1,138 @@
 <!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <title>HTML + CSS</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+<!-- La <!DOCTYPE html>declaración define que este documento es un documento HTML5
+El <html>elemento es el elemento raíz de una página HTML.
+El <head>elemento contiene metainformación sobre la página HTML
+El <title>elemento especifica un título para la página HTML (que se muestra en la barra de título del navegador o en la pestaña de la página)
+El <body>elemento define el cuerpo del documento y es un contenedor para todo el contenido visible, como encabezados, párrafos, imágenes, hipervínculos, tablas, listas, etc.
+El <h1>elemento define un encabezado grande
+El <p>elemento define un párrafo -->
 
-    <body>
-        <header class="site-header">
-            <div>
-                <!-- etiqueta de texto ctrl kc -->
-                <h1>HTML</h1>
-                <H2>prueba</H2>
-                <H3>Hola</H3>
-                <H4>Mundo</H4>
-                <H5>Hola esto es una prueba</H5>
-                <p>esto es una prueba</p>
-                <p>esto es una prueba </p>
-            </div>
-        </header>
-    </body>
-</HTml>
+<!-- Declaración del tipo de documento HTML5 -->
+<html lang="es">
+<!-- Elemento raíz de la página en idioma español -->
+
+<head>
+    <!-- Sección de encabezado: información sobre la página -->
     
+    <meta charset="UTF-8">
+    <!-- Define la codificación de caracteres (UTF-8 soporta acentos y caracteres especiales) -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hace que la página sea responsiva en dispositivos móviles -->
+    
+    <title>Mi Sitio Web - HTML y CSS</title>
+    <!-- Título que aparece en la pestaña del navegador -->
+    
+    <link rel="stylesheet" href="style.css">
+    <!-- Vincula el archivo CSS para aplicar estilos a la página -->
+</head>
+
+<body>
+    <!-- Cuerpo de la página: contiene todo lo visible -->
+    
+    <!-- ============ ENCABEZADO ============ -->
+    <header class="site-header">
+        <div class="container">
+            <!-- Título principal de la página -->
+            <h1 class="site-title">Bienvenido a Mi Sitio Web</h1>
+            
+            <!-- Descripción secundaria -->
+            <h2 class="site-description">Un lugar para aprender HTML y CSS</h2>
+            
+            <!-- Subtítulo -->
+            <h3 class="site-subtitle">Construyendo hermosos sitios web, línea por línea</h3>
+            
+            <!-- Lema adicional -->
+            <h4 class="site-tagline">Creando experiencias web impresionantes con HTML y CSS</h4>
+            
+            <!-- Eslogan inspirador -->
+            <h5 class="site-motto">Diseñando la web con creatividad y estilo</h5>
+            
+            <!-- Párrafo con descripción -->
+            <p class="site-slogan">Construyendo el futuro de la web con HTML y CSS</p>
+        </div>
+    </header>
+    <!-- Fin del encabezado -->
+    
+    <!-- ============ MENÚ DE NAVEGACIÓN ============ -->
+    <nav class="site-nav">
+        <ul>
+            <!-- Lista sin orden para el menú -->
+            <li><a href="#">Inicio</a></li>
+            <!-- Enlace a la página de inicio -->
+            
+            <li><a href="#">Acerca de</a></li>
+            <!-- Enlace a la página de información -->
+            
+            <li><a href="#">Contacto</a></li>
+            <!-- Enlace a la página de contacto -->
+        </ul>
+    </nav>
+    <!-- Fin del menú de navegación -->
+    
+    <!-- ============ CONTENIDO PRINCIPAL ============ -->
+    <main class="site-content" id="main-content">
+
+        <p> un enlace <a href="https://www.ejemplo.com">Ejemplo</a> para visitar un sitio web.
+            <abbr title="HyperText Markup Language">HTML</abbr> es el lenguaje de marcado utilizado para crear páginas web.
+        </p>
+        <blockquote cite="https://www.w3.org/TR/html52/">
+            <p>HTML es fundamental para el desarrollo web, ya que proporciona la estructura básica de las páginas web.</p>
+        </blockquote>
+        <p> <sub>Subíndice</sub> y <sup>superíndice</sup> son útiles para fórmulas matemáticas y notaciones científicas.</p>
+    
+        <!-- Sección de introducción -->
+        <section class="intro" id="introduction">
+            <h2>Introducción a HTML y CSS</h2>
+            <!-- Párrafo introductorio -->
+            <p>HTML (HyperText Markup Language) es el lenguaje estándar para crear páginas web. 
+            CSS (Cascading Style Sheets) se utiliza para diseñar y maquetar páginas web. 
+            Juntos, forman la base del desarrollo web.</p>
+            
+            <!-- Artículo dentro de la sección -->
+            <article class="article">
+                <h3>¿Qué es HTML?</h3>
+                <!-- Explicación de HTML -->
+                <!-- Aprender las etiquetas de marcado -->
+                <p>HTML es un lenguaje de marcado <strong>que estructura el contenido </strong> en la web. 
+            Utiliza etiquetas para definir <em>elementos como títulos</em>, párrafos, enlaces e imágenes.</p>
+            </article>
+            <!-- Fin del artículo -->
+        </section>
+        <!-- Fin de la sección de introducción -->
+        <!-- nueva seccion -->
+        <section class="card" id="listas"> </section>
+        <h2> Listas</h2>
+        <div class="grid">
+            <h3>Listas no ordenadas</h3>
+            <ul>
+                <li>pan</li>
+                <li>cafe</li>
+                <li>paciencia con HTMÑ</li>
+            </ul>
+        </div>
+        <DIV>
+            <h3>Lista ordenadas</h3>
+            <ol>
+                <li> Clonar Repositorio</li>
+                <li>Editar</li>
+                <li>Commit</li>
+                <li>push</li>
+            </ol>
+        </DIV>
+        </section>
+        <section class="card" id="Multimedia">
+            <h3> Imagen</h3>
+            <img src="https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000042000/e965921d2670a197008fe9403e50aaa0b150eabcaab4ce8b0c860d75ba4d1ee6" alt="Imagen " loading="lazy" width="300" height="200"> 
+        </section>
+
+    </main>
+    <!-- Fin del contenido principal -->
+    
+</body>
+<!-- Fin del cuerpo de la página -->
+
+</html>
+<!-- Fin del documento HTML -->
+
+
