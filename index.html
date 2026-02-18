@@ -1,3 +1,7 @@
+<!-- Autor: jose mauricio cantuca narvaez
+ingenieria de sistemas 5 semestre jornada nocturna
+Fecha: 2024-06-15 -->
+
 <!DOCTYPE html>
 <!-- ════════════════════════════════════════════════════════════════════════════════
      DECLARACIÓN DEL TIPO DE DOCUMENTO
@@ -152,7 +156,7 @@
              SUBSECCIÓN A: CONCEPTOS BÁSICOS
              ─────────────────────────────────────────────────────────────────────────── -->
         
-        <section class="conceptos" id="seccion-conceptos">
+        <section class="card" id="seccion-conceptos">
             <!-- ELEMENT SECTION:
                  - Agrupa contenido temáticamente relacionado
                  - Esta sección trata sobre conceptos básicos
@@ -197,7 +201,7 @@
              SUBSECCIÓN B: ETIQUETAS HTML IMPORTANTES
              ─────────────────────────────────────────────────────────────────────────── -->
         
-        <section class="etiquetas" id="seccion-etiquetas">
+        <section class="card" id="seccion-etiquetas">
             <!-- Nueva sección sobre etiquetas HTML -->
             
             <h2>Etiquetas HTML Más Importantes</h2>
@@ -285,7 +289,7 @@
              SUBSECCIÓN C: EJEMPLO COMPLETO DE HTML
              ─────────────────────────────────────────────────────────────────────────── -->
         
-        <section class="ejemplo" id="seccion-ejemplo">
+        <section class="card" id="seccion-ejemplo">
             <!-- Sección con ejemplo de código completo -->
             
             <h2>Estructura Completa de una Página HTML</h2>
@@ -372,7 +376,7 @@
              SUBSECCIÓN D: INTRODUCCIÓN A CSS
              ─────────────────────────────────────────────────────────────────────────── -->
         
-        <section class="css-intro" id="seccion-css">
+        <section class="card" id="seccion-css">
             <!-- Sección sobre CSS -->
             
             <h2>¿Para Qué Sirve CSS?</h2>
@@ -406,7 +410,7 @@
              SUBSECCIÓN E: ELEMENTOS AVANZADOS DE HTML
              ─────────────────────────────────────────────────────────────────────────── -->
         
-        <section class="elementos-avanzados" id="seccion-avanzados">
+        <section class="card" id="seccion-avanzados">
             <!-- Sección sobre elementos HTML más complejos y estructurados -->
             
             <h2>Elementos Avanzados de HTML</h2>
@@ -548,65 +552,76 @@
             <!-- etiqueta boton
              tr pilas
              td colas -->
-            <button type="button" class="btn">Botón de ejemplo</button>
+
 
             <section class="card" id="tablas">
-                <h2> tablas</h2>
-                <table>
-                    <caption> Tabla de ejemplo</caption>
-                    <thead>
-                        <tr>
-                            <th scope="col">Comando</th>
-                            <th scope="col">¿Qué hace?</th>
-                        </tr>
-                                                <body>
-                        <thead>
-                            <tr>
-                            <td>
-                                <code>&lt;git status&gt;</code>
-                            <td>Muestra de cambios pendientes</td>
-                        </tr>
-                        
-                        <tr>
-                            <td><code>&lt;git add&gt;</code></td>
-                            <td>Agrega archivos al área de preparación</td>
-                        </tr>
-                        <tr>
-                            <td><code>&lt;git commit&gt;</code></td>
-                            <td>Guarda los cambios en el repositorio</td>
-                        </tr>
-                        <tr>
-                            <td><code>&lt;git push&gt;</code></td>
-                            <td>Envía los cambios al repositorio remoto</td>
-                        </tr>
+    <h2>Comandos Git Esenciales</h2>
 
-                            
-                        </body>
+    <table>
+        <caption>Tabla de ejemplo</caption>
 
-                        <section class="card" id="git-commands">
-                            <h2>Comandos Git Esenciales</h2>
-                            <form action="#" method="post" class="form" ></form>
-                            <fieldset>
-                                <legend>datos basicos</legend>
-                                <label for="text" name="nombre" placeholder="ingrese el nombre" required="">Nombre:
+        <thead>
+            <tr>
+                <th scope="col">Comando</th>
+                <th scope="col">¿Qué hace?</th>
+            </tr>
+        </thead>
 
-                                </label>
-                                <label for="">  
-                                    password:
-                                    <input type="password" name="password" minlength="8" required></label>
-                                    
-                                    <label for="">
-                                        select:
-                                        <select name="option">
-                                            <option value=""> elige la seleccion</option>
-                                            <option value="opcion1">Opción 1</option>
-                                            <option value="opcion2">Opción 2</option>
-                                        </select>
-                                        
-                                </label>
+        <tbody>
+            <tr>
+                <td><code>git status</code></td>
+                <td>Muestra cambios pendientes</td>
+            </tr>
+            <tr>
+                <td><code>git add</code></td>
+                <td>Agrega archivos al área de preparación</td>
+            </tr>
+            <tr>
+                <td><code>git commit</code></td>
+                <td>Guarda los cambios en el repositorio</td>
+            </tr>
+            <tr>
+                <td><code>git push</code></td>
+                <td>Envía cambios al repositorio remoto</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
 
-                            </fieldset>
-                            </section>
+<section class="card" id="formulario">
+    <h2>Formulario de Ejemplo</h2>
+
+    <form class="form">
+        <fieldset>
+            <legend>Datos Básicos</legend>
+
+            <label>
+                Nombre:
+                <input type="text" name="nombre" placeholder="Ingrese su nombre" required>
+            </label>
+
+            <label>
+                Contraseña:
+                <input type="password" name="password" minlength="8" required>
+            </label>
+
+            <label>
+                Selección:
+                <select name="option">
+                    <option value="">Elige una opción</option>
+                    <option value="opcion1">Opción 1</option>
+                    <option value="opcion2">Opción 2</option>
+                </select>
+            </label>
+
+            <div class="actions">
+                <button type="submit" class="btn">Enviar</button>
+                <button type="reset" class="btn ghost">Limpiar</button>
+            </div>
+        </fieldset>
+    </form>
+</section>
+
                     
 
 
@@ -632,7 +647,7 @@
                  SUBSECCIÓN E.3: TABLAS
                  ──────────────────────────────────────────────────────────────────────── -->
             
-            <article class="articulo">
+            <article class="card">
                 <h3>Tablas: Organizando Datos en Filas y Columnas</h3>
                 
                 <p>
@@ -707,7 +722,7 @@
                  SUBSECCIÓN E.4: FORMULARIOS
                  ──────────────────────────────────────────────────────────────────────── -->
             
-            <article class="articulo">
+            <article class="card">
                 <h3>Formularios: Recolectando Información de Usuarios</h3>
                 
                 <p>
